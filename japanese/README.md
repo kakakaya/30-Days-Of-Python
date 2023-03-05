@@ -37,7 +37,7 @@
 
 <div>
 <small>Support the <strong>author</strong> to create more educational materials</small> <br />
-<a href = "https://www.paypal.me/asabeneh"><img src='./images/paypal_lg.png' alt='Paypal Logo' style="width:10%"/></a>
+<a href = "https://www.paypal.me/asabeneh"><img src='../images/paypal_lg.png' alt='Paypal Logo' style="width:10%"/></a>
 </div>
 
 <div align="center">
@@ -53,12 +53,16 @@
   <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
   <small> Second Edition: July, 2021</small>
   </sub>
+
+  <sub>Translator:
+  <a href="https://github.com/kakakaya/" target="_blank">kakakaya</a><br>
+  </sub>
 </div>
 
 
 [Day 2 >>](./02_Day_Variables_builtin_functions/02_variables_builtin_functions.md)
 
-![30DaysOfPython](./images/30DaysOfPython_banner3@2x.png)
+![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
 - [🐍 30 Days Of Python](#-30-days-of-python)
 - [📘 Day 1](#-day-1)
@@ -126,11 +130,11 @@ Python を学ぶ理由に納得していただけたでしょうか。 Pyton は
 Python スクリプトを実行するには、 Python のランタイムをインストールしなければなりません。ここからインストーラーを[ダウンロード](https://www.python.org/) しましょう。
 
 Windows はこちら
-[![installing on Windows](./images/installing_on_windows.png)](https://www.python.org/)
+[![installing on Windows](../images/installing_on_windows.png)](https://www.python.org/)
 
 macOS ユーザーはこちら
 
-[![installing on Windows](./images/installing_on_macOS.png)](https://www.python.org/)
+[![installing on Windows](../images/installing_on_macOS.png)](https://www.python.org/)
 
 Linux ユーザーは各パッケージマネージャを利用してください。
 
@@ -140,7 +144,7 @@ Python が正常にインストールされたかを確認する場合、次の�
 python --version
 ```
 
-![Python Version](./images/python_versio.png)
+![Python Version](../images/python_versio.png)
 
 ご覧の通り、私は _Python 3.7.5_ を使っています。バージョンが異なるかもしれませんが、 3.6 以上と表示されたなら大丈夫です。
 正常にインストールされたのを確認し、次に進みましょう。
@@ -154,27 +158,27 @@ Python はインタプリタ型のスクリプト言語であり、コンパイ�
 python
 ```
 
-![Python Scripting Shell](./images/opening_python_shell.png)
+![Python Scripting Shell](../images/opening_python_shell.png)
 
 Python Shellが開き、あなたが Python のコードを入力するのを待っています。 >>> という記号に続けて Python のコードを書くことができます。次のように入力してみましょう。
-![Python script on Python shell](./images/adding_on_python_shell.png)
+![Python script on Python shell](../images/adding_on_python_shell.png)
 
 ** よくできました! ** 最初の Python スクリプトを Python Shell に入力することができました。
 この Python Shell を終了するには、 >>> の記号の次に `exit()` と入力して Enter を押すことで終了できます。
 
-![Exit from python shell](./images/exit_from_shell.png)
+![Exit from python shell](../images/exit_from_shell.png)
 
 これで、 Python Shell を開く方法と抜ける方法を学びました。
 
 あなたのコードを Python が理解できた場合は、 実行結果を出力しますが、もし理解できなければエラーを返します。わざとミスをして、 Python がどうなるか見てみましょう。
 
-![Invalid Syntax Error](./images/invalid_syntax_error.png)
+![Invalid Syntax Error](../images/invalid_syntax_error.png)
 
 エラーを見てわかる通り、 Python は賢いので、私たちが作ったミスを理解し、 _Syntax Error: invalid syntax_ だと指摘してくれています。 `x` を乗算の記号に使おうとしていますが、これは Python では正しい記法ではないので、シンタックスエラー(構文のエラー)になっています。乗算をするには `x` ではなく、アスタリスク( `*` )を使うのが正しい記法です。画面に表示されたエラーは例外の起きた場所を明示しています。
 
 このように、プログラムの中からエラーを発見して除去する流れを **デバッグ** と言います。早速、 `x` を `*` に入れ替えてデバッグしましょう。
 
-![Fixing Syntax Error](./images/fixing_syntax_error.png)
+![Fixing Syntax Error](../images/fixing_syntax_error.png)
 
 バグは修正され、コードは実行され、期待通りの結果を得られました。
 プログラマーはこのようなエラーと対面するのは日常であり、どのようにデバッグすればいいかを知るのは大切です。
@@ -204,7 +208,7 @@ Python Shellが開き、あなたが Python のコードを入力するのを待
 より先のセクションでは、これら以外のエラーも見ることができます。
 一旦、もうすこし Python シェルの使い方を学習しましょう。もし閉じてしまっているなら開き直してください。
 
-![Python Scripting Shell](./images/opening_python_shell.png)
+![Python Scripting Shell](../images/opening_python_shell.png)
 
 今度は、四則演算のような基本的な計算です。
 
@@ -235,17 +239,17 @@ Python での数学表現に挑戦しましょう。また、コメントにも�
 コメントを行いつつ、数学表現をしましょう。
 
 
-![Maths on python shell](./images/maths_on_python_shell.png)
+![Maths on python shell](../images/maths_on_python_shell.png)
 
 次の節に進む前に、Python シェルの練習を十分にしておきましょう。 `exit()` と入力するとシェルから抜けることができ、ターミナルで `python` と入力すると再度 Python シェルに入れます。
 
-![Writing String on python shell](./images/writing_string_on_shell.png)
+![Writing String on python shell](../images/writing_string_on_shell.png)
 
 ### Installing Visual Studio Code
 
 The Python interactive shell is good to try and test small script codes but it will not be for a big project. In real work environment, developers use different code editors to write codes. In this 30 days of Python programming challenge we will use visual studio code. Visual studio code is a very popular open source text editor. I am a fan of vscode and I would recommend to [download](https://code.visualstudio.com/) visual studio code, but if you are in favor of other editors, feel free to follow with what you have.
 
-[![Visual Studio Code](./images/vscode.png)](https://code.visualstudio.com/)
+[![Visual Studio Code](../images/vscode.png)](https://code.visualstudio.com/)
 
 If you installed visual studio code, let us see how to use it.
 If you prefer a video, you can follow this Visual Studio Code for Python [Video tutorial](https://www.youtube.com/watch?v=bn7Cx4z-vSo)
@@ -254,21 +258,21 @@ If you prefer a video, you can follow this Visual Studio Code for Python [Video 
 
 Open the visual studio code by double clicking the visual studio icon. When you open it you will get this kind of interface. Try to interact with the labeled icons.
 
-![Visual studio Code](./images/vscode_ui.png)
+![Visual studio Code](../images/vscode_ui.png)
 
 Create a folder named 30DaysOfPython on your desktop. Then open it using visual studio code.
 
-![Opening Project on Visual studio](./images/how_to_open_project_on_vscode.png)
+![Opening Project on Visual studio](../images/how_to_open_project_on_vscode.png)
 
-![Opening a project](./images/opening_project.png)
+![Opening a project](../images/opening_project.png)
 
 After opening it you will see shortcuts for creating files and folders inside of 30DaysOfPython project's directory. As you can see below, I have created the very first file, helloworld.py. You can do the same.
 
-![Creating a python file](./images/helloworld.png)
+![Creating a python file](../images/helloworld.png)
 
 After a long day of coding, you want to close your code editor, right? This is how you will close the opened project.
 
-![Closing project](./images/closing_opened_project.png)
+![Closing project](../images/closing_opened_project.png)
 
 Congratulations, you have finished setting up the development environment. Let us start coding.
 
@@ -283,7 +287,7 @@ Python スクリプトを Python シェルに書くこともできますし、�
 インデント(段落)とは、文章中の空白を指します。他の多くのプログラミング言語ではコードを読み易くするためにインデントを使いますが、Python ではコードのブロックを表現するために使われます(他の言語では、波括弧`{}`がコードのブロックを表現するのに使われます)。
 Python でのよくあるバグの一つが、誤ったインデントです。
 
-![Indentation Error](./images/indentation.png)
+![Indentation Error](../images/indentation.png)
 
 ### Comments
 
@@ -413,7 +417,7 @@ Python の集合型は、複数の型の要素を持つ集合で、リストや�
 
 値や変数の型を知るには、 `type` 関数を利用します。
 
-![Checking Data types](./images/checking_data_types.png)
+![Checking Data types](../images/checking_data_types.png)
 
 ### Python File
 このプロジェクト(30DaysOfPython)のプロジェクトを開いき、 `helloworld.py` を開いてください。もしなければ、 `30DaysOfPython` というフォルダを作成し、 `helloworld.py` というファイルをその中に作り、以下の内容を書き込んでください。
@@ -451,7 +455,7 @@ print(type((9.8, 3.14, 2.7)))    # タプル (tuple)
 
 この Python スクリプトを Visual Studio Code で実行するには、下の画像を参照してください。ターミナルで `python helloworld.py` と入力しても実行できます。
 
-![Running python script](./images/running_python_script.png)
+![Running python script](../images/running_python_script.png)
 
 🌕 あんたはすごい!ついに初日のチャレンジを完了し、最強になるための第一歩を踏み出しました。もうすこし演習をして、さらに鍛えましょう。
 
